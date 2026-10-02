@@ -1,0 +1,6 @@
+from typing import Protocol
+from modulo_users.entity.user_entity import UserEntity
+
+class UserRepository(Protocol):
+    def get_by_provider(self, provider: str, provider_id: str): ...
+    def create(self, email: str, first_name: str, provider: str, provider_id: str) -> UserEntity: ...

@@ -7,6 +7,8 @@ from alembic import context
 from modulo_common.core.base_entity import Base
 from modulo_users.core.config import settings
 
+from modulo_users.entity import user_entity
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
