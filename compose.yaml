@@ -1,0 +1,9 @@
+services:
+  users-database:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: users
+      POSTGRES_PASSWORD: users
+      POSTGRES_DATABASE: modulo_users
+    ports:
+      - "5433:5432"
